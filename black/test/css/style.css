@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-color: #999;
+}
+
+.menu-toggle, .menu {
+  background-color: white;
+}
+
+.menu-toggle {
+  position: relative;
+  left: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.menu-toggle > i {
+  position: absolute;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu .center {
+  text-align: center;
+}
+
+.menu .right {
+  text-align: right;
+}
+
+.menu>div {
+  width: 33.33%;
+}
+
+.menu p {
+  display: inline-block;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+  }
+  .menu > div {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .menu > div p {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+  }
+  .menu .center {
+    order: 1;
+    padding: 15px 0;
+  }
+  .menu .left > p,
+  .menu .right > p:not(:last-child) {
+    border-bottom: 1px solid; /* Here are the lines */
+  }
+  .menu .right > p:last-child {
+    margin-bottom: 15px;
+  }
+  .menu .left {
+    display: none;
+    order: 2;
+  }
+  .menu .right {
+    display: none;
+    order: 3;
+  }
+}

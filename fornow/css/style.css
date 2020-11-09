@@ -1,0 +1,220 @@
+body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #080808;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container img {
+    position: absolute;
+}
+
+.nav-container .menu {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-container .menu {
+        display: block;
+        position: absolute;
+        margin: -12px 0 0 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-container .nav-items {
+        display: none;
+    }
+}
+
+.nav-container .nav-items {
+    list-style: none;
+}
+
+.nav-container .nav-items li {
+    transition: all 0.1s linear;
+    display: inline-block;
+    margin: 0 8px;
+    color: #9e9e9e;
+    cursor: pointer;
+    font-size: 0.88rem;
+}
+
+.nav-container .nav-items li:hover {
+    color: #fafafa;
+    transform: scale(1.05);
+}
+
+.nav-container .nav-items .angle-right {
+    margin-left: 3px;
+}
+
+.site-body {
+    color: #2196f3;
+    padding: 30px;
+    text-align: center;
+}
+
+.site-body.fade {
+    transition: background 0.2s linear;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    margin: 0;
+    opacity: 0.7;
+    filter: blur(1px);
+}
+
+.nav {
+    float: right;
+}
+
+.logo-span {
+    display: inline-block;
+}
+
+.logo {
+    height: 20px;
+    float: left;
+}
+
+.explorer {
+    transition: width 0.5s ease;
+    position: absolute;
+    z-index: 9;
+    min-height: 100vh;
+    height: auto;
+    width: 0px;
+    background: black;
+    top: 0;
+    left: 0;
+}
+
+.explorer.expanded {
+    transition: width 0.5s ease;
+    width: 450px;
+}
+
+.explorer .explorer-container {
+    padding: 10px 0;
+}
+
+.explorer .explorer-container .explorer-header {
+    border-bottom: 2px solid #2196f3;
+    text-align: center;
+}
+
+.explorer .explorer-container .explorer-header ul {
+    transition: all 0.1s ease;
+    list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 2px;
+}
+
+.explorer .explorer-container .explorer-header ul li {
+    display: inline-block;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.explorer .explorer-container .explorer-header ul li.active {
+    color: #2196f3;
+}
+
+.explorer .explorer-container .explorer-header ul li:hover {
+    transform: scale(1.05);
+}
+
+.explorer .explorer-container .explorer-body .heading {
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+.explorer .explorer-container .explorer-body ul {
+    list-style: none;
+    padding: 8px;
+    max-height: 82vh;
+    overflow: auto;
+}
+
+.explorer .explorer-container .explorer-body li {
+    border-bottom: 1px solid #455a64;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #cfd8dc;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.explorer .cross-wrapper {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 6px;
+    top: 5px;
+}
+
+.explorer .cross,
+.explorer .cross:after {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    width: 2px;
+    height: 15px;
+    background: #2196f3;
+    transform: rotate(45deg);
+}
+
+.explorer .cross:after {
+    content: "";
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}

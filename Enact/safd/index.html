@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Navbar using flexbox and javascript</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <body>
+    <nav class="navbar">
+      <div class="left-menu"><span class="navbar-toggle left-menu" id="js-navbar-toggle"> <i class="fas fa-bars"></i>
+        </span> <a href="#" class="logo">logo</a></div>
+      <ul class="main-nav middle-menu" id="js-menu">
+        <li> <a href="#" class="nav-links">Projects</a> </li>
+        <li> <a href="#" class="nav-links">Fonts</a> </li>
+        <li> <a href="#" class="nav-links">About Us</a> </li>
+        <li> <a href="#" class="nav-links">Blog</a> </li>
+        <li> <a href="#" class="nav-links">Contact Us</a> </li>
+      </ul>
+      <ul class="main-nav right-menu" id="js-menu">
+        <li> <a href="#" class="nav-links">Account</a> </li>
+        <li> <a href="#" class="nav-links">Cart (0)</a> </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <div class="hero__background">
+        <video autoplay="" loop="" muted="" poster="#">
+          <source src="./bg" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-section">
+        <div class="hero-section-text">
+          <h1>Header</h1>
+          <h5>subtitle about anything you like</h5>
+        </div>
+      </div>
+    </header>
+    <footer class="web-footer inverse">
+      <div class="web-footer__inner">
+        <div class="web-footer__sections">
+          <div class="web-footer__logo"><svg width="80" height="24" viewBox="0 0 477 145">
+              <g transform="translate(-161.000000, -228.000000)" fill="#fdd251">
+                <path
+                  d="M635.320287,255.20572 C637.052418,259.807138 638,264.792909 638,270 L638,331 C638,354.195959 619.195959,373 596,373 L566,373 C563.593176,373 561.233636,372.797551 558.93748,372.408753 L526.395767,345.016646 C524.844295,340.633038 524,335.915117 524,331 L524,270 L524,270 C524,246.804041 542.804041,228 566,228 L596,228 C598.691937,228 601.324724,228.253254 603.875833,228.737236 L635.320287,255.20572 Z M198.920833,336.933333 L198.920833,340 L219.877083,340 C242.119804,340 241.707902,311 219.877083,311 L198.920833,311 L198.920833,325.933333 L161,294 L161,305 L198.920833,336.933333 Z M263.663043,283.811809 C261.225407,288.448009 257.339933,292.993415 251.824443,295.789548 C261.468117,300.63392 267.03239,307.482751 270,314.515999 L270,345.157643 C263.721785,362.699616 248.125562,373 220.519873,373 L161,373 L161,228 L219.490117,228 C240.766848,228 257.06597,237.468633 263.663043,254.492931 L263.663043,283.811809 Z M438.920833,336.933333 L438.920833,340 L459.877083,340 C482.119804,340 481.707902,311 459.877083,311 L438.920833,311 L438.920833,325.933333 L401,294 L401,305 L438.920833,336.933333 Z M503.663043,283.811809 C501.225407,288.448009 497.339933,292.993415 491.824443,295.789548 C501.468117,300.63392 507.03239,307.482751 510,314.515999 L510,345.157643 C503.721785,362.699616 488.125562,373 460.519873,373 L401,373 L401,228 L459.490117,228 C480.766848,228 497.06597,237.468633 503.663043,254.492931 L503.663043,283.811809 Z M401,352 L401,373 L425.947917,373 L401,352 Z M438.920833,286 L459.877083,286 C477.794831,286 478.412684,260 459.877083,260 L438.920833,260 L438.920833,286 Z M161,352 L161,373 L185.947917,373 L161,352 Z M198.920833,286 L219.877083,286 C237.794831,286 238.412684,260 219.877083,260 L198.920833,260 L198.920833,286 Z M320.413247,262.40678 L320.413247,284.935028 L379.333157,284.935028 L379.333157,316.679379 L320.413247,316.679379 L320.413247,338.388418 L384.465553,338.388418 L384.465553,362.999951 L372.517988,373 L283.254697,373 L283.254697,228 L371.585994,228 L384.465553,239.704745 L384.465553,262.40678 L320.413247,262.40678 Z M561,277.639098 L561,324.947368 C561,335.112782 571.131004,340 581.087336,340 C591.043668,340 601,334.917293 601,324.947368 L601,277.639098 C601,266.887218 590.694323,262 580.563319,262 C570.781659,262 561,267.473684 561,277.639098 Z">
+                </path>
+              </g>
+            </svg></div>
+          <div class="web-footer__section"><span class="web-footer__section--title">Bebo</span><a
+              rel="noopener noreferrer" class="web-footer__item"
+              href="http://web.archive.org/web/20190530205124/http://dbh.la/bebo" target="_blank">Merch</a><a
+              rel="noopener noreferrer" class="web-footer__item"
+              href="http://web.archive.org/web/20190530205124/https://medium.com/@thetylerhayes/we-no-longer-have-oldphotos-2f29208e270f#.vpw4amd9v"
+              target="_blank">Old Photos</a></div>
+          <div class="web-footer__section"><span class="web-footer__section--title">Resources</span><a
+              class="web-footer__item" href="/legal/terms">Terms of Service</a><a class="web-footer__item"
+              href="/legal/privacy">Privacy</a><a class="web-footer__item" href="/legal/copyright">Copyright</a><a
+              class="web-footer__item" href="/legal/opensource">Open Source</a></div>
+          <div class="web-footer__section"><span class="web-footer__section--title">Say Hello</span><a
+              rel="noopener noreferrer" class="web-footer__item"
+              href="http://web.archive.org/web/20190530205124/https://twitter.com/Bebo_Official"
+              target="_blank">Twitter</a><a rel="noopener noreferrer" class="web-footer__item"
+              href="http://web.archive.org/web/20190530205124/https://discordapp.com/invite/Bebo"
+              target="_blank">Discord</a><a rel="noopener noreferrer" class="web-footer__item"
+              href="http://web.archive.org/web/20190530205124/https://www.twitch.tv/beboapp"
+              target="_blank">Twitch</a><a rel="noopener noreferrer" class="web-footer__item"
+              href="http://web.archive.org/web/20190530205124/https://www.youtube.com/channel/UCUM8OsK3e2v-gRKnHgqV0cA"
+              target="_blank">YouTube</a></div>
+        </div>
+        <div class="web-footer__bottom"><span>©2019 BEBO INC - version: 0.1.92</span></div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="285.188" height="85" viewBox="0 0 80 85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        fill: #c0dbf4;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="161" y1="128.109" x2="242" y2="164.172" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.26" stop-color="#fff"/>
+      <stop offset="0.985" stop-color="#fff" stop-opacity="0.231"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="110.468" y2="146.532" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" y1="92.828" y2="128.891" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="icon">
+    <path id="Shape_590_copy_2" data-name="Shape 590 copy 2" class="cls-2" d="M200.69,171L242,146.943l-40.5-25.66L161,146.943Z" transform="translate(-161 -86)"/>
+    <path id="Shape_590_copy" data-name="Shape 590 copy" class="cls-3" d="M200.69,153.359L242,129.3l-40.5-25.661L161,129.3Z" transform="translate(-161 -86)"/>
+    <path class="cls-4" d="M200.69,135.717L242,111.661,201.5,86,161,111.661Z" transform="translate(-161 -86)"/>
+  </g>
+</svg>

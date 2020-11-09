@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0; url=https://admin.appseed.net/apps/test/plugins/plugins.php" />

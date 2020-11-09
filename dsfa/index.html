@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pure CSS Responsive Dropdown Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo"><a href="/home"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><path d="M7.335 1.023l2.462.434a1 1 0 0 1 .811 1.159L8.004 17.388a2 2 0 0 1-2.317 1.622l-3.94-.694a1 1 0 0 1-.81-1.159L3.28 3.862a3.5 3.5 0 0 1 4.054-2.839zm7.039 3.272l7.878 1.39a1 1 0 0 1 .812 1.158l-1.997 11.325a5.5 5.5 0 0 1-6.372 4.461l-4.431-.78a1 1 0 0 1-.812-1.16l2.605-14.771a2 2 0 0 1 2.317-1.623z" fill="#24A44C"></path></svg></a></div><label for="drop" class="toggle">Menu</label> <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li class="right">
+                <div class='avatar-wrapper' id='avatarWrapper'> <img alt='Profile Photo' class='avatar-photo' height='50' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/287405/profile/profile-512.jpg' width='50'> <svg class='avatar-dropdown-arrow' height='24' id='dropdownWrapperArrow' viewbox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><title>Dropdown Arrow</title> <path d='M12 14.5c-.2 0-.3-.1-.5-.2l-3.8-3.6c-.2-.2-.2-.4-.2-.5 0-.1 0-.3.2-.5.3-.3.7-.3 1 0l3.3 3.1 3.3-3.1c.2-.2.5-.2.8-.1.3.1.4.4.4.6 0 .2-.1.4-.2.5l-3.8 3.6c-.1.1-.3.2-.5.2z'></path> </svg></div>
+                <div class='dropdown-wrapper' id='dropdownWrapper' style='width: 256px'>
+                    <div class='dropdown-profile-details'> <span class='dropdown-profile-details--name'>Felix Lee</span> <span class='dropdown-profile-details--email'>hello@felixlee.io</span></div>
+                    <div class='dropdown-links'> <a href='#'>Profile</a> <a href='#'>Sign out</a></div>
+                </div>
+            </li>
+            <li class="right">
+                <a href="#">
+                    <ion-icon name="cog" class="cog"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <p> A simple dropdown navigation menu made with CSS Only. Dropdowns are marked with a plus sign ( + )</p>
+    <p> Resize the screen to see the look if the screen is smaller then 768px</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+</body>
+
+</html>

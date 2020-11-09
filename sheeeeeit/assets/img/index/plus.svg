@@ -1,0 +1,17 @@
+
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_LandingPage_dsk" transform="translate(-810.000000, -4170.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="4974"></rect>
+            <g id="07" transform="translate(0.000000, 3612.000000)" fill-rule="nonzero">
+                <g id="btn/viewgallery" transform="translate(694.000000, 558.000000)">
+                    <g id="btn/+square" transform="translate(116.000000, 0.000000)">
+                        <rect id="Rectangle" fill="#FC643A" x="0" y="0" width="22" height="22"></rect>
+                        <path d="M16,11.5 L6,11.5" id="Line-3" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" transform="translate(11.000000, 11.500000) rotate(90.000000) translate(-11.000000, -11.500000) "></path>
+                        <path d="M16,11.5 L6,11.5" id="Line-3" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

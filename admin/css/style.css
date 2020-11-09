@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+::selection {
+    background: #24A44C;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #24A44C;
+    color: #fff;
+}
+
+#nav-btn {
+    fill: white;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    display: none;
+}
+
+.vertical-line {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 35px;
+    border-bottom: #F7F7F7 4px solid;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #110f24;
+    background: #fff;
+}
+
+aside {
+    position: fixed;
+    float: left;
+    width: 200px;
+    padding-left: 3%;
+    padding-top: 30px;
+    top: 0;
+    bottom: 0;
+    background-color: #222C3C;
+    z-index: 400;
+}
+
+header {
+    float: left;
+    width: calc(100% - 320px);
+    padding: 20px 280px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 300;
+    border-bottom: 1px solid #ececec;
+}
+
+article {
+    float: left;
+    margin-left: 280px;
+    margin-right: 280px;
+    padding-top: 150px;
+    width: calc(100% - 320px);
+    padding-bottom: 150px;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {}
+
+nav ul li {
+    line-height: 30px;
+}
+
+nav ul li a {
+    color: #b7c0cd;
+}
+
+nav ul li a:hover {
+    color: #24A44C;
+}
+
+#products {
+    padding-top: 40px;
+    font-weight: bold;
+    color: #7f8fa4;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    -webkit-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    -o-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+}
+
+@media (max-width: 730px) {
+    h2 {
+        font-size: 2em;
+    }
+    aside {
+        float: left;
+        width: 95%;
+        padding-left: 5%;
+        position: relative;
+        float: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    header {
+        float: left;
+        position: relative;
+        width: 95%;
+        padding-left: 5%;
+    }
+    nav {
+        display: none;
+    }
+    #nav-btn {
+        fill: white;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        display: block;
+        cursor: pointer;
+    }
+    h1 {
+        margin-bottom: 0px;
+    }
+    .vertical-line {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: none;
+    }
+    #products {
+        padding-top: 0;
+    }
+    article {
+        float: left;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 50px;
+    }
+}
+
+.admin-search {
+    float: left;
+    display: block;
+    margin: 5px 0;
+    padding: .59375rem .9375rem;
+    transition: all .3s;
+    border: 1px solid #dfe3e9;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #354052;
+    font-size: .875rem;
+    font-weight: 400;
+    resize: none;
+    width: 270px;
+}
+
+.admin-search:focus {
+    border: 1px solid #24A44C;
+}
+
+header h2 {
+    float: left;
+    line-height: 38px;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.header-right {
+    position: relative;
+    justify-content: flex-end;
+}
+
+.logo {}
+
+.avatar-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avatar-wrapper .avatar-dropdown-arrow {
+    transition: opacity .1s linear, -webkit-transform .15s linear;
+    transition: opacity .1s linear, transform .15s linear;
+    transition: opacity .1s linear, transform .15s linear, -webkit-transform .15s linear;
+}
+
+.avatar-wrapper .avatar-dropdown-arrow.active {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.avatar-wrapper:hover .avatar-dropdown-arrow {
+    opacity: 0.2;
+}
+
+.avatar-photo {
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.dropdown-wrapper {
+    position: absolute;
+    top: 75%;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    right: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    margin-top: .5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(50, 50, 93, 0.08), 0 2px 4px 0 rgba(50, 50, 93, 0.05), 0 4px 8px 0 rgba(136, 152, 170, 0.08);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-wrapper.active {
+    top: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-profile-details {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.dropdown-profile-details--name {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.dropdown-profile-details--email {
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    font-size: 16px;
+}
+
+.dropdown-links a {
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: .5rem;
+    color: #110f24;
+}
+
+.dropdown-links a:hover {
+    color: #24a44c;
+}
+
+.dropdown-links a:last-of-type {
+    padding-bottom: 0;
+}
+
+.hydrated {
+    font-size: 30px;
+}
+
+.notification-margin {
+    margin-right: 25px;
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}

@@ -1,0 +1,6 @@
+html {
+    border-top: 3px solid #4183D7;
+    background: #ECECEC;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upscale</title>
+
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.6/css/all.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <div id="app">
+
+        <div class="columns is-gapless">
+            <div class="column is-3">
+                <aside class="menu">
+                    <ul class="menu-list">
+                        <div class="menu-list__profile media">
+                            <div class="media-left">
+                                <figure class="image">
+                                    <img src="https://pbs.twimg.com/profile_images/1026691938991390720/lTIXRMtN_400x400.jpg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-5 font-color-white">Owen Bick</p>
+                                <p class="subtitle is-7 has is-uppercase font-color-white has-text-weight-bold">edit</p>
+                            </div>
+                        </div>
+                        <div class="menu-list__main is-uppercase has-text-left">
+                            <li><a class="subtitle is-7"><i class="fas fa-home"></i>Dashboard</a></li>
+                            <li><a class="subtitle is-7 active"><i class="fas fa-user"></i> Members</a></li>
+                            <li><a class="subtitle is-7"><i class="fas fa-database"></i> Database</a></li>
+                            <li><a class="subtitle is-7"><i class="far fa-chart-bar"></i> Statistics</a></li>
+                            <li class="menu-list__outlier"><a class="subtitle is-7"><i class="fas fa-cog"></i> Settings</a></li>
+                        </div>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column">
+                <div class="dashboard">
+                    <div class="dashboard__content">
+                        <div class="header">
+                            <div>
+                                <p class="title is-5 is-pulled-left font-color-dark">Team Members
+                                    <span class="subtitle is-6 is-block font-color-light" style="padding-top: 1.0rem">102 members</span></p>
+                                <p class="title is-6 is-pulled-right font-color-medium">14 Available Now
+                                    <span class="subtitle is-6 is-block font-color-primary is-uppercase" style="font-size: 0.9rem; padding-top: 1.0rem">View members</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="columns">
+                                <div class="column one-third" v-for="user in firstThreeUsers">
+                                    <user-card :user="user"></user-card>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bottom-row">
+                            <div class="columns">
+                                <div class="column one-third" v-for="user in lastThreeUsers">
+                                    <user-card :user="user"></user-card>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+
+
+
+        <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background: #000;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.thicc {
+    height: 500px;
+}
+
+.love {
+    background: url(heart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.love img {
+    width: 200px;
+    margin-top: 125px;
+}
+
+.yuge {
+    height: 10000px;
+}

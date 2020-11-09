@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1, user-scalable=no' name='viewport'>
+    <meta content='Bridgely is the best and easiest way to collaborate and share drives with yourself and your employees.' name='description'>
+    <meta content='Bridgely, hard drive sharing, file sharing, file hosting, computer bridging, mac file sharing, employee file sharing, collaboration, software' name='keywords'>
+    <meta content='' name='author'>
+    <link rel="shortcut icon" type="image/x-icon" href="//d14z9qrtiybky4.cloudfront.net/assets/favicon-d79f302be7e898107347faf27059aef3a334593ef889a30488175810f921e02f.png" />
+    <link rel="stylesheet" media="all" href="/assets/css/application-vej41ux3ujajzbm6bt0wlyg5c40l7h16i82xukub.css" data-turbolinks-track="true" />
+    <link rel='stylesheet prefetch' href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="/assets/js/application-cnqbb5o7okm3400scrvt9dgxx30ux8uwr3bimp5m.js"></script>
+    <title>Upload - Freefall</title>
+    <!-- <noscript>
+<img height='1' src='//www.facebook.com/tr?id=992396180812048&amp;ev=PageView&amp;noscript=1' style='display:none' width='1'>
+</noscript>
+<meta content='433654070172888' property='fb:app_id'>
+<meta content='This website actually saves you money.' property='og:title'>
+<meta content='Trim' property='og:site_name'>
+<meta content='http://www.asktrim.com' property='og:url'>
+<meta content='Trim saves you money and organizes your finances.' property='og:description'>
+<meta content='product' property='og:type'>
+<meta content='//s3-us-west-1.amazonaws.com/asktrim-assets/Trim-Karate+(1).jpg' property='og:image'>
+<meta content='446A9BBEAE9C39A7A3187337F87D55D6' name='msvalidate.01'> -->
+</head>
+
+<body>
+    <div class="alert">
+        This site is currently in alpha and is in the middle of being developed. If you have any questions, email us at <a href="mailto:owen@freefall.co">owen@freefall.co.</a> (Everything crossed out doesn't work)
+    </div>
+    <div class="topnav" id="myTopnav">
+        <div class="container">
+            <a href="/" class="logo-container"><img src="/assets/img/logo.svg" class="logo"></a>
+            <input type="text" class="search" name="search" placeholder="Search">
+            <a href="#signup" class="active">Sign Up</a>
+            <a href="#signin">Sign In</a>
+            <a href="/upload" class="active">Upload</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <center>
+                <h1>Upload To Freefall</h1>
+            </center>
+            <form id="file-upload-form" class="uploader">
+                <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+                <label for="file-upload" id="file-drag">
+    <img id="file-image" src="#" alt="Preview" class="hidden">
+    <div id="start">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <div>Select a file or drag here</div>
+      <div id="notimage" class="hidden">Please select a video (.wmv, .mov, .mp4, or .avi)</div>
+      <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+    </div>
+    <div id="response" class="hidden">
+      <div id="messages"></div>
+      <progress class="progress" id="file-progress" value="0">
+        <span>0</span>%
+      </progress>
+    </div>
+  </label>
+            </form>
+
+        </div>
+
+    </div>
+    <center><a href="#">Migrating from YouTube?</a></center>
+    <div id="signin" class="overlay">
+            <div class="popup">
+                <div class="form-wrapper">
+                    <h1>Sign In</h1>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <form>
+                            <div class="form-item">
+                                <label for="email"></label>
+                                <input type="email" name="email" required="required" placeholder="Email Address">
+                            </div>
+                            <div class="form-item">
+                                <label for="password"></label>
+                                <input type="password" name="password" required="required" placeholder="Password">
+                            </div>
+                            <div class="button-panel">
+                                <input type="submit" class="button" title="Sign In" value="Sign In">
+                            </div>
+                        </form>
+                        <div class="form-footer">
+                            <p>Don't have an account? <a href="#signup">Sign Up!</a></p>
+                            <p><a href="#">Forgot password?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="signup" class="overlay">
+            <div class="popup">
+                <div class="form-wrapper">
+                    <h1>Sign Up</h1>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <form>
+                            <div class="form-item">
+                                <label for="email"></label>
+                                <input type="email" name="email" required="required" placeholder="Email Address">
+                            </div>
+                            <div class="form-item">
+                                <label for="password"></label>
+                                <input type="password" name="password" required="required" placeholder="Password">
+                            </div>
+                            <div class="button-panel">
+                                <input type="submit" class="button" title="Sign In" value="Sign In">
+                            </div>
+                        </form>
+                        <div class="form-footer">
+                            <p>Have an account? <a href="#signin">Sign In!</a></p>
+                            <p><a href="#">Migrating from YouTube?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+DirectoryIndex index.php
+RewriteEngine On
+
+#new Rule
+#if its not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+#and it has a trailing slash then redirect to URL without slash
+RewriteRule ^(.+)/$ /$1 [L,R=301]

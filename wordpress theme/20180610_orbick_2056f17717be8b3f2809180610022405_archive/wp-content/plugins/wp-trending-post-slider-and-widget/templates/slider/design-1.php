@@ -1,0 +1,80 @@
+<div class="wtpsw-post-slider-<?php echo $unique; ?> wtpsw-post-slider <?php echo $design; ?>">
+	
+	<?php
+	while ($wtpsw_posts->have_posts()) : $wtpsw_posts->the_post();
+		global $post;
+		$wtpsw_post_stats 	= array();
+		$post_id 			= isset($post->ID) ? $post->ID : '';
+		$comment_text 		= wtpsw_get_comments_number( $post->ID, $hide_empty_comment_count );
+	?>
+
+	<div class="wtpsw-post-slides">
+
+		<div class="wtpsw-post-list">			
+				
+				<div class="wtpsw-medium-5 wtpswcolumns">
+					<div class="wtpsw-post-image-bg">
+						<?php the_post_thumbnail(array(500,500)); ?>
+					</div>
+				</div>
+
+				<div class="wtpsw-medium-7 wtpswcolumns">
+
+					<h2 class="wtpsw-post-title">
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					</h2>
+
+					<?php if($showdate == 'true' || $showauthor == 'true' || $show_comment_count == 'true') { ?>	
+					<div class="wtpsw-post-stats">
+						<?php if($showauthor == 'true') {
+							$wtpsw_post_stats[] = "<span>".__( 'By', 'wtpsw' )." <a href='".get_author_posts_url( $post->author )."'>".get_the_author()."</a></span>";
+						} ?>
+
+						<?php if($showdate == "true") {
+							$wtpsw_post_stats[] = "<span>".get_the_date( $wtpsw_options['date_format'] )."</span>";
+						} ?>
+
+						<?php if( $show_comment_count == "true" && $comment_text ) {
+							$wtpsw_post_stats[] = "<span class='wtpsw-post-comment'>".$comment_text."</span>";
+						} ?>
+
+						<?php echo join(' / ', $wtpsw_post_stats); ?>
+
+					</div><!-- end .wtpsw-post-stats  -->
+					<?php } ?>
+
+					<?php if($showcontent == "true") {  ?>
+					<div class="wtpsw-post-content">
+						<div class="wtpsw-sub-content"><?php echo wtpsw_get_post_excerpt( get_the_content(), '', $words_limit); ?></div>
+					</div><!-- end .wtpsw-post-content -->
+					<?php } ?>
+
+				</div>
+
+			
+		</div><!-- end .wtpsw-post-list -->
+
+	</div><!-- end .wtpsw-post-slides -->
+
+	<?php
+		endwhile;
+		wp_reset_query(); 		// Reset wp query
+		wp_reset_postdata();	// Reset post data
+	?>
+
+</div><!-- end .wtpsw-post-slider -->
+
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery('.wtpsw-post-slider-<?php echo $unique; ?>').slick({
+			dots		: <?php echo $dots; ?>,
+			infinite	: true,
+			arrows		: <?php echo $arrows; ?>,
+			speed 		: <?php echo $speed; ?>,
+			autoplay 	: <?php echo $autoplay; ?>,						
+			autoplaySpeed: <?php echo $autoplayinterval; ?>,
+			slidesToShow	: 1,
+			slidesToScroll	: 1	
+		});
+	});
+</script>

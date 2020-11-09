@@ -1,0 +1,20 @@
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_LandingPage_dsk" transform="translate(-1182.000000, -1020.000000)">
+            <rect fill="none" x="0" y="0" width="1440" height="4974"></rect>
+            <g id="02" transform="translate(158.000000, 708.000000)">
+                <g id="btn_join" transform="translate(1024.000000, 312.000000)">
+                    <g id="btn/&gt;orange">
+                        <g id="+org">
+                            <g id="+" fill="#FC643A">
+                                <path d="M23,11.5 C23,17.8513353 17.8507784,23 11.5003588,23 C5.14850404,23 0,17.8513353 0,11.5 C0,5.14866467 5.14850404,0 11.5003588,0 C17.8507784,0 23,5.14866467 23,11.5" id="Fill-89"></path>
+                            </g>
+                            <polyline id="Path-2" stroke="#FFFFFF" stroke-linecap="round" fill-rule="nonzero" transform="translate(11.341895, 11.337144) scale(-1, 1) rotate(45.000000) translate(-11.341895, -11.337144) " points="8 8 8 14.6742883 14.683791 14.6742883"></polyline>
+                            <path d="M15.0646897,11.3371442 L5.61910126,11.3371442" id="Line-3" stroke="#FFFFFF" stroke-linecap="round" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

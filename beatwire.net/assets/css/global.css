@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    border: 1px solid transparent;
+}
+
+a:focus {
+    border: 1px dotted #ccc;
+}
+
+*:focus {
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+blue {
+    color: #4183D7;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.main-header {
+    background-color: #F3F4F8;
+    /* background: linear-gradient( rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url(//www.bestpsdfreebies.com/wp-content/uploads/2014/05/shards_pattern.jpg); */
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    color: #222;
+    min-height: 150px;
+    padding: 60px;
+    text-align: center;
+}
+
+.about-header {
+    background-color: #F3F4F8;
+    /* background: linear-gradient( rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url(https://s-media-cache-ak0.pinimg.com/736x/75/e0/d9/75e0d925602856fec98863ade598b8ea.jpg); */
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    color: #222;
+    min-height: 150px;
+    padding: 60px;
+    text-align: center;
+        font-weight: bold;
+}
+
+.header h1 {
+    font-size: 3em;
+}
+
+.header p {
+    font-size: 1.5em;
+}
+
+.tag-block {
+    height: 150px;
+}
+
+.tag-block h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 120px;
+}
+
+.tag-block h2 {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 120px;
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.loader {
+    -webkit-animation-name: horizontalProgressBar;
+    animation-name: horizontalProgressBar;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    background: #4183D7;
+    height: 3px;
+    left: 0;
+    position: block;
+    top: 0;
+    width: 0%;
+    z-index: 9999;
+}
+
+@keyframes horizontalProgressBar {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 55%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes horizontalProgressBar
+/* Safari and Chrome */
+
+{
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 55%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.sectiontitle {
+    text-decoration: underline;
+}
+
+.col-item {
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.col-item:hover {
+    box-shadow: 0px 2px 5px -1px #000;
+    -moz-box-shadow: 0px 2px 5px -1px #000;
+    -webkit-box-shadow: 0px 2px 5px -1px #000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid #52A1D5;
+}
+
+.col-item .photo img {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1px;
+    border-radius: 10px 10px 0 0;
+}
+
+.col-item .info {
+    padding: 0 10px 10px 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+
+.col-item .price {
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-item .price h5 {
+    line-height: 30px;
+    margin: 0;
+}
+
+.price-text-color {
+    color: #219FD1;
+    font-size: 1.5em;
+}
+
+.col-item .info .rating {
+    color: #777;
+}
+
+.col-item .rating {
+    float: left;
+    font-size: 17px;
+    text-align: right;
+}
+
+.col-item .separator {
+    border-top: 1px solid #E1E1E1;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.col-item .separator p {
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i {
+    margin-right: 5px;
+}
+
+.col-item .btn-favs {
+    width: 33%;
+    float: left;
+}
+
+.col-item .btn-favs {
+    border-right: 1px solid #E1E1E1;
+}
+
+.col-item .btn-rewires {
+    width: 33%;
+    float: left;
+}
+
+.col-item .btn-rewires {
+    border-right: 1px solid #E1E1E1;
+}
+
+.col-item .btn-comments {
+    width: 33%;
+    float: left;
+    padding-left: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+[data-slide="prev"] {
+    margin-right: 10px;
+}
+
+
+/*
+Hover the image
+*/
+
+.post-img-content {
+    height: 196px;
+    position: relative;
+}
+
+.post-img-content img {
+    position: absolute;
+    padding: 1px;
+    border-radius: 10px 10px 0 0;
+}
+
+.post-title {
+    display: table-cell;
+    vertical-align: bottom;
+    z-index: 2;
+    position: relative;
+}
+
+.post-title b {
+    background-color: rgba(51, 51, 51, 0.58);
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    color: #FFF;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.post-title b:first-child {
+    font-size: 14px;
+}
+
+.round-tag {
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50% 50% 0;
+    border: 4px solid #FFF;
+    background: #4183D7;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 6px;
+    font-size: 17px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    color: #99979c;
+    text-align: center;
+    background-color: #22313F;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer-links {
+    padding-left: 0;
+    margin-bottom: 20px
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links li+li {
+    margin-left: 15px;
+}
+
+@media (min-width:768px) {
+    .footer {
+        text-align: left;
+    }
+    .footer p {
+        margin-bottom: 0;
+    }
+}
+
+.aboutcontainer {
+    font-size: 18px;
+    padding: 0 15%;
+}
+
+.aboutcontainer p {}
+
+.teamcontainer {
+    text-align: center;
+}
+.teamcontainer small {
+    font-size: 16px;
+    margin: -10px 0  0;
+}
+.teamcontainer .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+li.dropdown {
+    font-size: 6px;
+    padding-top: 1px;
+    letter-spacing: 1px;
+}
+
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 9px solid #333;
+    border-right: 9px solid transparent;
+    border-left: 9px solid transparent;
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 11px solid #fff;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    position: absolute;
+    top: -9px;
+    right: 9px;
+    z-index: 10;
+}
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 175px;
+  height: 175px;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}

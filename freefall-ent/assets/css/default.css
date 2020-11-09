@@ -1,0 +1,190 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+}
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.navbar > .menu .navbar-brand-centered,
+.navbar > .container-fluid .navbar-brand-centered {
+    margin-left: -115px;
+    margin-top: -10px;
+}
+
+.menu {
+    margin: 0 200px;
+}
+.main {
+    margin-top: 75px;
+}
+
+#video-background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.btn-big-white {
+    padding: 20px 30px !important;
+    background: #fff;
+    font-size: 20px  !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    border-radius: 0  !important;
+    transition: 0.2s;
+    margin-right: 15px;
+    border: 2px solid #fff !important;
+}
+.btn-big-white:hover {
+    background: #1ABC9C;
+    color: #000 !important;
+    border: 2px solid #1ABC9C !important;
+}
+.btn-big-black {
+    padding: 20px 30px !important;
+    background: #000;
+    font-size: 20px  !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0  !important;
+    transition: 0.2s;
+    margin-right: 15px;
+    border: 2px solid #000 !important;
+}
+.btn-big-black:hover {
+    background: #1ABC9C;
+    border: 2px solid #1ABC9C !important;
+}
+#load {
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.home {
+        height: 700px;
+}
+.our-story {
+    background: url(https://static.pexels.com/photos/531360/pexels-photo-531360.jpeg);
+}
+.parents {
+    background: url(https://static.pexels.com/photos/139389/pexels-photo-139389.jpeg);
+}
+.careers {
+    background: url(https://georgianpartners.com/wp-content/uploads/2014/07/Shopify-Staff-Lounge.png);
+}
+.lg-green {
+    color: #1ABC9C;
+    font-size: 4em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin: 100px 0;
+}
+.lg-blk {
+    color: #333;
+    font-size: 4em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin: 100px 0 30px 0;
+}
+.second {
+    background: #F7FAFC;
+    padding: 25px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+#padding {
+    padding: 0 400px 100px 400px;
+}
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    color: #99979c;
+    text-align: center;
+    background-color: #22313F;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer-links {
+    padding-left: 0;
+    margin-bottom: 20px
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links li+li {
+    margin-left: 15px;
+}
+
+@media (min-width:768px) {
+    .footer {
+        text-align: left;
+    }
+    .footer p {
+        margin-bottom: 0;
+    }
+}
+.shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	
+}.shadowfilter:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+}

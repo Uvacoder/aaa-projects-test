@@ -1,0 +1,7 @@
+# Enact Theme Configuration File
+
+name: "Enact"
+description: "The custom theme for Enact. Copyright (c) 2019 Enact Holdings, LLC. Do not distribute."
+author: "Enact Holdings, LLC, Owen Bick"
+properties:
+  serverSidePagination: false # Defines client side will handle pagination

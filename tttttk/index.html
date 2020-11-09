@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive hamburger menu - pure CSS #1</title>
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="" class="logo">CSS Nav</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class='header-right'>
+            <div class='avatar-wrapper' id='avatarWrapper'> <img alt='Profile Photo' class='avatar-photo' height='50' src='https://secure.gravatar.com/avatar/5bf2bc3d1ced8676505f5f9f0967da4b?default=https%3A%2F%2Fcloud.digitalocean.com%2Favatars%2Fdefault4.png&secure=true' width='50'> <svg class='avatar-dropdown-arrow' height='24' id='dropdownWrapperArrow' viewbox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <title>Dropdown Arrow</title> <path d='M12 14.5c-.2 0-.3-.1-.5-.2l-3.8-3.6c-.2-.2-.2-.4-.2-.5 0-.1 0-.3.2-.5.3-.3.7-.3 1 0l3.3 3.1 3.3-3.1c.2-.2.5-.2.8-.1.3.1.4.4.4.6 0 .2-.1.4-.2.5l-3.8 3.6c-.1.1-.3.2-.5.2z'></path> </svg> </div>
+            <div class='dropdown-wrapper' id='dropdownWrapper' style='width: 256px'>
+                <div class='dropdown-profile-details'> <span class='dropdown-profile-details--name'>Owen Bick</span> <span class='dropdown-profile-details--email'>o@upscale.chat</span> </div>
+                <div class='dropdown-links'> <a href='#'>Account</a> <a href='#'>Sign out</a> </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+</body>
+
+</html>

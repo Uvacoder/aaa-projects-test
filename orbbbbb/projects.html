@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects ― ORB Labs</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+    <link href="//unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//use.typekit.net/lrn5hit.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="247990289266099">
+    </div>
+    <div class="animated loader"></div>
+    <div class="initial">
+        <nav>
+
+            <a class="nav-brand above-overlay nav-padding" href="/">
+                <div class="logo"></div>
+            </a>
+
+            <div class="menu-burger above-overlay">
+                <div class="bar"></div>
+            </div>
+
+        </nav>
+        <div class="overlay">
+            <div class="menu-content">
+                <div class="container">
+                    <ul class="menu-options-list">
+                        <li class="menu-option option-1"><a href="/">Home</a></li>
+                        <li class="menu-option option-2"><a href="/projects">Projects</a></li>
+                        <li class="menu-option option-3"><a href="/about">Who Are We</a></li>
+                        <li class="menu-option option-4"><a href="/services" class="services">Services</a> <sup>Coming Soon</sup></li>
+                        <li class="menu-option option-5"><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="hero">
+            <div class="container">
+
+                <h1>Our<br />Portfolio</h1>
+                <p>Our portfolio of <span class="alt-text">web design</span> to <span class="alt-text">brand strategy</span> that focuses on quality.</p>
+                <a class="art-btn" href="/about">Our process</a>
+                <a class="art-btn" href="/contact">Get in touch</a>
+                <div class="portfolio-art"></div>
+            </div>
+        </section>
+    </div>
+    <div class="container"><img src="/img/line.png" class="line"></div>
+
+    <section class="portfolio">
+        <div class="container-main cf">
+            <a href="#" class="box-colour">
+                <div class="box black">
+                    <div class="box-inside">
+                        <div class="box-meta">
+                            <img src="/img/sonix.png" class="portfolio-logo">
+                            <hr />
+                            <p><a href="//shopsonix.com" id="portfolio-link" target="_blank">Sonix</a></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box blue">
+                    <div class="box-inside">
+                        <div class="box-meta">
+                            <img src="/img/licensecart.png" class="portfolio-logo">
+                            <hr />
+                            <p><a href="//licensecart.com" id="portfolio-link" target="_blank">Licensecart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box pink">
+                    <div class="box-inside">
+                        <div class="box-meta">
+                            <img src="/img/half-caked.png" class="portfolio-logo">
+                            <hr />
+                            <p><a href="//halfcaked.com" id="portfolio-link" target="_blank">Half Caked</a></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box yellow">
+                    <div class="box-inside">
+                        <div class="box-meta">
+                            <img src="/img/paris-99.png" class="portfolio-logo">
+                            <hr />
+                            <p><a href="//paris99.design" id="portfolio-link" target="_blank">Paris 99</a></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122171071-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122171071-1');
+
+    </script>
+
+    <script src='//code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

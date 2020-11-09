@@ -1,0 +1,489 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Europa, system-ui, -apple-system, Roboto, "Lucida Sans";
+    color: #535353;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: url(//chaptr.studio/wp-content/themes/chaptr/library/images/cursor.png), auto !important;
+}
+
+a {
+    border: 1px solid transparent;
+}
+
+a:focus {
+    border: 1px dotted #999;
+}
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    padding: 20px 0;
+    top: 0;
+    z-index: 9998;
+}
+
+.above-overlay {
+    z-index: 9999;
+}
+
+nav a.nav-brand {}
+
+nav a > img {
+    height: 50px;
+    width: auto;
+}
+
+@media (min-width: 789px) {
+    .menu-burger {
+        display: none;
+    }
+}
+
+.logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(/img/logo.svg);
+}
+
+.menu-burger {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    right: 50px;
+    margin: 0 30px 0 0;
+    padding: 10px;
+    position: fixed;
+}
+
+.bar,
+.bar:after,
+.bar:before {
+    height: 1px;
+    background: #fff;
+}
+
+.bar:before {
+    width: 30px;
+}
+
+.bar {
+    width: 25px;
+}
+
+.bar:after {
+    width: 20px;
+}
+
+.bar {
+    position: relative;
+    transform: translateY(10px);
+    transition: all 0ms 300ms;
+}
+
+.bar.animate {
+    width: 30px;
+    background: rgba(255, 255, 255, 0);
+}
+
+.bar.animate {}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+    width: 30px;
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: #343434;
+}
+
+.bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: #343434;
+}
+
+
+/*overlay*/
+
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    overflow: auto;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-content {
+    height: 70vh;
+    background: #fff;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+}
+
+.overlay a {
+    text-decoration: none;
+}
+
+.overlay .menu-options-list {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    margin: 20vh 0 0;
+}
+
+.overlay .menu-option {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.overlay .menu-option:hover {
+    webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.overlay .menu-option a {
+    color: #343434;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.overlay .menu-option a:after {
+    content: "";
+}
+
+.overlay .menu-option a:hover::after {
+    content: "\2015";
+    padding-left: 15px;
+    transition: 0.2s;
+}
+
+.overlay .menu-option:hover a {
+    color: #4f6df5;
+}
+
+@-webkit-keyframes slideDownIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes slideDownIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@-o-keyframes slideDownIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slideDownIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, -50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.slideDownIn {
+    -webkit-animation: slideDownIn 1s;
+    /* Safari 4+ */
+    -moz-animation: slideDownIn 1s;
+    /* Fx 5+ */
+    -o-animation: slideDownIn 1s;
+    /* Opera 12+ */
+    animation: slideDownIn 1s;
+    /* IE 10+, Fx 29+ */
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 95vw;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 90vw;
+        margin: 0 auto;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+
+.hero {}
+
+.hero h1 {
+    font-size: 90px;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0 0 16px 0;
+    color: #343434;
+    line-height: 1;
+}
+
+@media screen and (min-width: 670px) {
+    .hero h1 {
+        margin: 100px 0 0 0;
+    }
+}
+
+@media (max-width: 670px) {
+    .hero h1 {
+        font-size: 70px
+    }
+}
+
+@media (max-width: 992px) {
+    .hero p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .hero p {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+}
+
+.alt-text {
+    color: #4f6df5;
+    font-style: italic;
+}
+
+.btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 14px 20px;
+    font-size: .9rem;
+    border-left: 1px solid #333b69;
+    border-top: 1px solid #333b69;
+}
+
+@media screen and (min-width: 660px) {
+    .btn {
+        font-size: 1.2rem;
+    }
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.box {
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+
+.box:nth-child(2n) {
+    background-color: #333b69;
+}
+
+@media screen and (min-width: 800px) {
+    .box {
+        width: 50%;
+    }
+}
+
+.box-inside {
+    background-color: #fff;
+    position: absolute;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    padding: 2em;
+}
+
+.box-meta {
+    text-align: center;
+}
+
+.box-meta h3 {
+    margin-bottom: 1em;
+}
+
+.box-meta p {
+    margin-top: 1em;
+}
+
+hr {
+    height: 1px;
+    width: 20%;
+    background-color: #333b69;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.black {
+    background-color: #333b69;
+}
+
+.blue {
+    background-color: #1F2041;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.home-btn {
+    font-size: 18px;
+    margin: 26px 36px 0 0;
+    display: inline-block;
+    border-radius: 5px;
+    color: #090909;
+    transition: 0.2s;
+    width: 150px;
+    text-decoration: none;
+}
+
+.home-btn:after {
+    content: "\2192";
+    padding-left: 5px;
+    color: #bbb;
+}
+
+.home-btn:hover::after {
+    color: #090909;
+    transition: 0.2s;
+    padding-left: 15px;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10001;
+    background: url(https://www.lesmills.com.au/themes/lmap/images/loading.gif) center no-repeat #fff;
+    background-size: 350px;
+}
+
+.white-svg {
+    fill: #fff;
+    transition: 0.2s;
+}
+
+.art {
+    width: 600px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    right: 0;
+    background: url(https://images.pexels.com/photos/6253/city-street-typography-design.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 992px) {
+    .art {
+        display: none;
+    }
+}
+
+.line {
+    width: 94px;
+    bottom: 50px;
+    position: absolute;
+}
+
+.initial {
+    height: 100vh;
+}
+
+.nav-padding {
+    margin: 0 0 0 75px;
+    position: fixed;
+}
