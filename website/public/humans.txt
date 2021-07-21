@@ -1,0 +1,7 @@
+/* SITE BY */
+Name: Owen Bick, https://owenbick.com/
+
+/* TEAM */
+Role: Designer and front end engineering
+Name: Owen Bick
+Site: https://owenbick.com/about

@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aec0261b.chunk.css",
+    "main.js": "/static/js/main.8d524d2e.chunk.js",
+    "main.js.map": "/static/js/main.8d524d2e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.56a8dca1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.56a8dca1.js.map",
+    "static/js/2.9df2c6b3.chunk.js": "/static/js/2.9df2c6b3.chunk.js",
+    "static/js/2.9df2c6b3.chunk.js.map": "/static/js/2.9df2c6b3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.aec0261b.chunk.css.map": "/static/css/main.aec0261b.chunk.css.map",
+    "static/js/2.9df2c6b3.chunk.js.LICENSE.txt": "/static/js/2.9df2c6b3.chunk.js.LICENSE.txt",
+    "static/media/blue-heron-home.545cb486.jpg": "/static/media/blue-heron-home.545cb486.jpg",
+    "static/media/blue-heron-menu.4756aef3.jpg": "/static/media/blue-heron-menu.4756aef3.jpg",
+    "static/media/blue-heron-portfolio.9cbc8419.jpg": "/static/media/blue-heron-portfolio.9cbc8419.jpg",
+    "static/media/cpanel.785d1531.jpg": "/static/media/cpanel.785d1531.jpg",
+    "static/media/merk-home-1.f14915f4.jpg": "/static/media/merk-home-1.f14915f4.jpg",
+    "static/media/merk-home-expanded.8a224c1e.jpg": "/static/media/merk-home-expanded.8a224c1e.jpg",
+    "static/media/merk-menu.2fb31d1f.jpg": "/static/media/merk-menu.2fb31d1f.jpg",
+    "static/media/owen-bick.151bd0e2.jpg": "/static/media/owen-bick.151bd0e2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56a8dca1.js",
+    "static/js/2.9df2c6b3.chunk.js",
+    "static/css/main.aec0261b.chunk.css",
+    "static/js/main.8d524d2e.chunk.js"
+  ]
+}
