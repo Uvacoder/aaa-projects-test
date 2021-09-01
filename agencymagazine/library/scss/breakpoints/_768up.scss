@@ -1,0 +1,102 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+body {
+}
+
+.header {
+    display: block;
+    align-items: center;
+
+    .bick {
+        margin: 0 2rem 0 0;
+    }
+
+    .titles {
+        text-align: left;
+    }
+}
+
+h1,
+li {
+    font-size: 2rem;
+}
+
+.hero {
+    h1 {
+        line-height: 1.25;
+    }
+}
+
+.resume {
+    .resume__job {
+        max-width: 75%;
+    }
+}
+
+.portfolio {
+    .portfolio__table {
+        margin-top: 7rem;
+
+        tr {
+            display: table-row;
+            border-bottom: 1px solid #e7e5e0;
+
+            &:first-of-type {
+                border-bottom: 0;
+            }
+
+            td {
+                display: table-cell;
+                padding: 2rem 0;
+
+                &:last-of-type {
+                    text-align: right;
+
+                    a {}
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    .contact__form {
+        max-width: 50%;
+    }
+}
+
+.footer {
+    display: block;
+    margin-top: 10rem;
+    background: #F8F7F6;
+    padding: 7rem 0;
+
+    .footer__links {
+        text-align: center;
+        margin: auto;
+
+        ul {
+            li {
+                display: inline-block;
+                font-size: 1.25rem;
+                margin: 0 1rem 3rem;
+            }
+        }
+    }
+
+    .footer__copy {
+        text-align: center;
+    }
+}
